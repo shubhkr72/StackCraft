@@ -1,0 +1,11 @@
+fundamentals: {label: Fundamentals, permalink: /fundamentals, description: Core concepts and design reasoning.}
+networking: {label: Networking, permalink: /networking, description: Protocols and the request path.}
+databases: {label: Databases, permalink: /databases, description: Storage modeling replication and scaling.}
+distributed-systems: {label: Distributed Systems, permalink: /distributed-systems, description: Consistency coordination messaging and failure.}
+architecture: {label: Architecture, permalink: /architecture, description: Services APIs and architecture patterns.}
+reliability: {label: Reliability, permalink: /reliability, description: Resilience observability and operations.}
+security: {label: Security, permalink: /security, description: Secure-by-design systems.}
+case-study: {label: Case Study, permalink: /case-study, description: End-to-end product designs.}
+performance: {label: Performance, permalink: /performance, description: Latency throughput and capacity.}
+interview: {label: Interview Prep, permalink: /interview, description: Clear system design interviews.}
+
