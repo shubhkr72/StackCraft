@@ -75,7 +75,6 @@ const config: Config = {
         ]},
         {title: 'Updates', items: [
           {label: 'Blog', to: '/blog'},
-          {label: 'RSS feed', to: '/blog/rss.xml'},
         ]},
       ],
       copyright: `Copyright © ${new Date().getFullYear()} System Design Notes. Built for curious engineers.`,
