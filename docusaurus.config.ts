@@ -3,10 +3,10 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'System Design Notes',
+  title: 'StackCraft',
   tagline: 'Build systems that survive the real world.',
   favicon: 'img/favicon.ico',
-  url: 'https://system-design-notes.example.com',
+  url: 'https://stack-craft-eight.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   i18n: {defaultLocale: 'en', locales: ['en']},
@@ -49,16 +49,18 @@ const config: Config = {
   themeConfig: {
     metadata: [
       {name: 'keywords', content: 'system design, distributed systems, scalability, software architecture'},
-      {name: 'author', content: 'System Design Notes'},
+      {name: 'Shubham Sebrin', content: 'System Design Notes'},
     ],
     colorMode: {respectPrefersColorScheme: true},
     navbar: {
-      title: 'System Design Notes',
+      title: 'StackCraft',
       logo: {alt: 'System Design Notes logo', src: 'img/logo.svg'},
       items: [
         {type: 'docSidebar', sidebarId: 'systemDesignSidebar', position: 'left', label: 'Learn'},
         {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/docs/case-studies/url-shortener', label: 'Case Studies', position: 'left'},
+        {to: '/docs/phase-7-case-studies/beginner/url-shortener', label: 'Case Studies', position: 'left'},
+        {to: '/docs/contribution', label: 'Contribution', position: 'left'},
+        {to: '/docs/about', label: 'About', position: 'left'},
       ],
     },
     footer: {
@@ -66,18 +68,18 @@ const config: Config = {
       links: [
         {title: 'Learn', items: [
           {label: 'Start here', to: '/docs/intro'},
-          {label: 'Fundamentals', to: '/docs/category/system-design-fundamentals'},
+          {label: 'Fundamentals', to: '/docs/phase-1-foundations/scalability'},
         ]},
         {title: 'Explore', items: [
-          {label: 'Case studies', to: '/docs/category/case-studies'},
-          {label: 'Interview checklist', to: '/docs/interview-prep/checklist'},
+          {label: 'Case studies', to: '/docs/phase-7-case-studies/beginner/url-shortener'},
+          {label: 'Interview checklist', to: '/docs/phase-8-interview-prep/checklist'},
           {label: 'All tags', to: '/blog/tags'},
         ]},
         {title: 'Updates', items: [
           {label: 'Blog', to: '/blog'},
         ]},
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} System Design Notes. Built for curious engineers.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Shubham Sebrin. Built for curious engineers.`,
     },
     prism: {
       theme: prismThemes.github,

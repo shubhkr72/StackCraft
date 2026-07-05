@@ -30,7 +30,7 @@ flowchart LR
 
 ## Recommended path
 
-Begin with [requirements and estimation](./fundamentals/requirements-estimation), then learn common building blocks such as [load balancing](./building-blocks/load-balancing), [caching](./building-blocks/caching), and [message queues](./distributed-systems/message-queues). Finally, apply the model in the [URL shortener case study](./case-studies/url-shortener).
+Start with the [prerequisites](./prerequisites/linux-basics), then build your foundations with [scalability](./phase-1-foundations/scalability) and [networking](./phase-1-foundations/networking/osi-model). Continue through [databases](./phase-2-data-layer/databases/sql), [caching](./phase-3-scaling/caching/cache-aside), and [distributed systems](./phase-4-distributed-systems/basics/consensus). Finally, apply the model in the [URL shortener case study](./phase-7-case-studies/beginner/url-shortener).
 
 :::tip Keep a decision log
 For every major choice, write: **decision, reason, alternative, consequence**. That habit is more valuable than memorizing any architecture diagram.

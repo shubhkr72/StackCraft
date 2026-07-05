@@ -1,0 +1,13 @@
+---
+title: Capacity Estimation
+---
+
+# Capacity Estimation
+
+## Overview
+This is a placeholder for Capacity Estimation. Detailed content is coming soon.
+
+> 🚧 **Under Construction**: We are working on this section.
+
+---
+*Want to contribute? Check the [Contribution Guide](/docs/contribution).*\n
