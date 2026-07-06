@@ -228,6 +228,7 @@ Client --> LoadBalancer
 LoadBalancer --> Service
 Service --> Database
 ```
+````
 ## Search
 
 StackCraft includes built-in **Local Search**.
