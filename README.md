@@ -1,64 +1,71 @@
-# System Design Notes
+# StackCraft
 
-A practical, searchable knowledge base for learning system design, scalability, and distributed systems. The website combines structured documentation, technical blog posts, Mermaid architecture diagrams, and real-world case studies.
+> **Master System Design with interactive notes, architecture diagrams, real-world case studies, and interview preparation**
 
-## Run locally
+StackCraft is an open-source knowledge base designed to help developers learn **System Design** from fundamentals to advanced distributed systems. It combines structured documentation, technical blogs, Mermaid diagrams, and practical case studies into a single searchable website.
 
-### Requirements
+---
 
-- Node.js 20 or newer
-- npm
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000). Changes to pages and Markdown content are reflected automatically.
-
-### Production build
-
-Generate the optimized static website and search index:
-
-```bash
-npm run build
-```
-
-Preview the production build locally:
-
-```bash
-npm run serve
-```
-
-Run the TypeScript check:
-
-```bash
-npm run typecheck
-```
-
-If Docusaurus retains stale generated data, clear it before rebuilding:
-
-```bash
-npm run clear
-npm run build
-```
-
-## Project architecture
+## Learning Roadmap
 
 ```text
-System Design/
-├── blog/                       # Dated technical blog posts
-│   ├── authors.yml             # Author profiles
-│   ├── tags.yml                # Blog category and tag definitions
-│   └── YYYY-MM-DD-topic.md     # Individual articles
-├── docs/                       # Structured learning documentation
+Fundamentals
+      │
+      ▼
+Networking
+      │
+      ▼
+Building Blocks
+      │
+      ▼
+Data Storage
+      │
+      ▼
+Distributed Systems
+      │
+      ▼
+Reliability & Scalability
+      │
+      ▼
+System Design Patterns
+      │
+      ▼
+Case Studies
+      │
+      ▼
+Interview Preparation
+```
+
+---
+
+## Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Docusaurus 3 | Documentation framework |
+| React 19 | User Interface |
+| TypeScript | Type safety |
+| Markdown / MDX | Documentation |
+| Mermaid | Architecture diagrams |
+| Prism | Syntax highlighting |
+| Local Search | Full-text search |
+| CSS Modules | Styling |
+| Node.js + npm | Development environment |
+| Vercel | Deployment |
+
+---
+
+## Project Structure
+
+```text
+StackCraft
+│
+├── blog/
+│   ├── authors.yml
+│   ├── tags.yml
+│   └── YYYY-MM-DD-post.md
+│
+├── docs/
 │   ├── fundamentals/
 │   ├── networking/
 │   ├── building-blocks/
@@ -67,102 +74,157 @@ System Design/
 │   ├── reliability/
 │   ├── case-studies/
 │   └── interview-prep/
+│
 ├── scripts/
-│   └── generate-blog-catalog.mjs  # Generates the 50-post starter catalog
 ├── src/
-│   ├── css/custom.css          # Global theme and documentation styles
+│   ├── css/
 │   └── pages/
-│       ├── index.tsx           # Custom React homepage
-│       └── index.module.css    # Homepage-scoped styles
-├── static/img/                 # Logo, favicon, and static images
-├── docusaurus.config.ts        # Site, blog, search, Mermaid, navbar, and footer config
-├── sidebars.ts                 # Documentation categories and navigation order
-├── package.json                # Dependencies and npm commands
-└── tsconfig.json               # TypeScript configuration
+│
+├── static/
+│
+├── docusaurus.config.ts
+├── sidebars.ts
+├── package.json
+└── tsconfig.json
 ```
 
-### How the website is assembled
-
-1. Docusaurus reads documentation from `docs/` and blog posts from `blog/`.
-2. `sidebars.ts` builds the ordered learning navigation and category pages.
-3. `docusaurus.config.ts` configures the theme, Markdown, Mermaid, blog feeds, and local search.
-4. React renders the custom homepage while Docusaurus renders Markdown and MDX content.
-5. `npm run build` generates static HTML, CSS, JavaScript, feeds, and the full-text search index in `build/`.
-6. Vercel serves the generated static website through its global edge network.
-
-## Technology stack
-
-| Technology | Purpose |
-| --- | --- |
-| Docusaurus 3 | Static documentation and blog framework |
-| React 19 | Custom homepage and reusable interface components |
-| TypeScript | Typed configuration and React source code |
-| Markdown / MDX | Documentation and technical article authoring |
-| Mermaid | Architecture, sequence, and data-flow diagrams |
-| Prism | Syntax highlighting for code examples |
-| Docusaurus Local Search | Browser-side full-text search for docs, pages, and blogs |
-| Infima + CSS Modules | Theme foundation and component-scoped styling |
-| Node.js + npm | Development, dependency management, and builds |
-| Vercel | Static hosting and automatic deployments |
-
-## Content workflow
-
-### Add documentation
-
-Create a Markdown file inside the appropriate directory under `docs/`:
-
-```markdown
 ---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js **20+**
+- npm
+- Git
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/StackCraft.git
+
+cd StackCraft
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start the Development Server
+
+```bash
+npm start
+```
+
+Visit:
+
+```text
+http://localhost:3000
+```
+
+The website automatically reloads whenever documentation or source files change.
+
+---
+
+## Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm start` | Start development server |
+| `npm run build` | Generate production build |
+| `npm run serve` | Preview production build |
+| `npm run typecheck` | Run TypeScript checks |
+| `npm run clear` | Clear Docusaurus cache |
+
+---
+
+## Production Build
+
+Build the optimized static website:
+
+```bash
+npm run build
+```
+
+Preview locally:
+
+```bash
+npm run serve
+```
+
+If Docusaurus keeps stale generated files:
+
+```bash
+npm run clear
+npm run build
+```
+
+---
+
+## Adding Documentation
+
+Create a Markdown file inside the appropriate folder under `docs/`.
+
+Example:
+
+```md
+---
+title: Load Balancer
 sidebar_position: 1
-title: Topic Title
-description: A short summary for search engines.
+description: Introduction to Load Balancers
 ---
 
-# Topic Title
+# Load Balancer
 
-Article content goes here.
+Your documentation goes here.
 ```
 
-The directory must be included in `sidebars.ts` before it appears in the learning navigation.
+Update `sidebars.ts` if needed to include the new page.
 
-### Add a blog post
-
-Create `blog/YYYY-MM-DD-post-slug.md`:
-
-```markdown
 ---
-title: "Post title"
-description: "Short description"
+
+## Adding Blog Posts
+
+Create a file:
+
+```text
+blog/YYYY-MM-DD-post-title.md
+```
+
+Example:
+
+```md
+---
+title: "CAP Theorem"
+description: "Understanding CAP Theorem"
 authors: [editorial]
-tags: [architecture, reliability]
+tags: [distributed-systems]
 ---
 
-Introduction shown on the blog index.
+Introduction...
 
 <!-- truncate -->
 
-The complete article follows here.
+Complete article...
 ```
 
-Tags must exist in `blog/tags.yml`. The existing starter catalog can be regenerated after editing `scripts/generate-blog-catalog.mjs`:
+Make sure the tags exist in `blog/tags.yml`.
 
-```bash
-node scripts/generate-blog-catalog.mjs
-```
+---
 
-### Add a Mermaid diagram
+## Mermaid Diagrams
 
-Use a Mermaid code block in any Markdown or MDX file:
+StackCraft supports Mermaid diagrams out of the box.
 
-````markdown
+Example:
+
+````md
 ```mermaid
 flowchart LR
-  Client --> LoadBalancer
-  LoadBalancer --> Service
-  Service --> Database
+
+Client --> LoadBalancer
+LoadBalancer --> Service
+Service --> Database
 ```
-````
-
-## Search
-
-Local full-text search indexes documentation, blog posts, and custom pages. The index is generated during the production build, so always run `npm run build` after adding or renaming content.
