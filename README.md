@@ -228,3 +228,70 @@ Client --> LoadBalancer
 LoadBalancer --> Service
 Service --> Database
 ```
+## Search
+
+StackCraft includes built-in **Local Search**.
+
+The search index includes:
+
+- Documentation
+- Blog posts
+- Custom pages
+
+The search index is automatically generated during:
+
+```bash
+npm run build
+```
+
+---
+
+## Documentation Workflow
+
+```text
+Write Markdown
+       │
+       ▼
+Add to docs/
+       │
+       ▼
+Update Sidebar
+       │
+       ▼
+Run npm start
+       │
+       ▼
+Preview Changes
+       │
+       ▼
+Commit Changes
+       │
+       ▼
+Open Pull Request
+```
+
+---
+
+## Contributing
+
+Contributions are always welcome!
+
+Please read the **[CONTRIBUTING.md](CONTRIBUTING.md)** guide before opening an Issue or Pull Request.
+
+Whether you're fixing a typo, improving documentation, or adding new content, every contribution is appreciated.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## Acknowledgements
+
+Built with ❤️ by **Shubham Sebrin**
+
+If you found this project helpful, consider giving it a ⭐ on GitHub and sharing it with others.
+
+**Happy Learning! 🚀**
