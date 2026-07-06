@@ -8,4 +8,5 @@ security: {label: Security, permalink: /security, description: Secure-by-design 
 case-study: {label: Case Study, permalink: /case-study, description: End-to-end product designs.}
 performance: {label: Performance, permalink: /performance, description: Latency throughput and capacity.}
 interview: {label: Interview Prep, permalink: /interview, description: Clear system design interviews.}
-
+system-design: {label: System Design, permalink: /system-design, description: General system design principles and patterns.}
+scalability: {label: Scalability, permalink: /scalability, description: Strategies for scaling systems to millions of users.}

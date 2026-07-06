@@ -1,5 +1,16 @@
+# Author -StackCraft
 editorial:
-  name: System Design Notes
-  title: Practical architecture for working engineers
+  name: Stackcraft
+  title: Build Systems That Survive the Real World
   page: true
 
+# Author- shubham
+shubham:
+  name: Shubham Sebrin
+  title: Creator of StackCraft
+  page: true
+  image_url: https://github.com/shubhkr72.png
+  socials:
+    github: shubhkr72
+    linkedin: shubham-sebrin
+    x: shubhkr72

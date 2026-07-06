@@ -3,7 +3,7 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-
+import LatestBlog from '@site/src/components/Latest_blog/latest_blog';
 const phases = [
   {icon: '01', title: 'Foundations', text: 'Scalability, networking, operating systems, and the language of reliability.', to: '/docs/phase-1-foundations/scalability'},
   {icon: '02', title: 'Data layer', text: 'Databases, storage internals, replication, sharding, and consistency.', to: '/docs/phase-2-data-layer/databases/sql'},
@@ -43,17 +43,7 @@ export default function Home(): ReactNode {
             ))}</div>
           </div>
         </section>
-        <section className={styles.latest}>
-          <div className="container"><span>STARTER CASE STUDY</span><Heading as="h2">Design a URL shortener</Heading><p>Start with a small API, then reason through identifiers, storage, caching, redirection latency, and failure modes.</p><Link to="/docs/phase-7-case-studies/beginner/url-shortener">Open the design →</Link></div>
-        </section>
-        <section className={styles.latest} style={{backgroundColor: 'var(--ifm-color-emphasis-100)', marginTop: '2rem'}}>
-          <div className="container">
-            <span>LATEST FROM THE BLOG</span>
-            <Heading as="h2">A 45-Minute Interview Plan</Heading>
-            <p>Timebox scope, estimates, APIs, a complete request path, the unique deep dive, failures, and final trade-offs.</p>
-            <Link to="/blog/2026/07/03/system-design-interview-plan">Read post →</Link>
-          </div>
-        </section>
+        <LatestBlog latestClass={styles.latest} />
       </main>
     </Layout>
   );

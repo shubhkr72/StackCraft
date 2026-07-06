@@ -18,6 +18,7 @@ const config: Config = {
         docs: {sidebarPath: './sidebars.ts'},
         blog: {
           showReadingTime: true,
+          blogSidebarCount: 'ALL',
           feedOptions: {type: ['rss', 'atom'], xslt: true},
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -44,6 +45,9 @@ const config: Config = {
         searchBarShortcutHint: true,
       },
     ],
+  ],
+  plugins: [
+    require.resolve('./plugins/latestBlogPlugin'),
   ],
 
   themeConfig: {
