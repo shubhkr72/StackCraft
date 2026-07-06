@@ -66,20 +66,47 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
+        {title: 'Build for Developers', items: [
+          {html: `
+            <div style="line-height:1.6">
+              <strong>StackCraft</strong> is an open-source platform for mastering
+              System Design through structured roadmaps and real-world case studies.
+            </div>
+          `},
+        ]},
+
         {title: 'Learn', items: [
-          {label: 'Start here', to: '/docs/intro'},
+          {label: 'Getting Started', to: '/docs/intro'},
           {label: 'Fundamentals', to: '/docs/phase-1-foundations/scalability'},
+          {label: 'Case Studies', to: '/docs/phase-7-case-studies/beginner/url-shortener'},
+          {label: 'Interview Prep', to: '/docs/phase-8-interview-prep/checklist'},
         ]},
-        {title: 'Explore', items: [
-          {label: 'Case studies', to: '/docs/phase-7-case-studies/beginner/url-shortener'},
-          {label: 'Interview checklist', to: '/docs/phase-8-interview-prep/checklist'},
-          {label: 'All tags', to: '/blog/tags'},
-        ]},
-        {title: 'Updates', items: [
+
+        {title: 'Resources', items: [
           {label: 'Blog', to: '/blog'},
+          {label: 'All Tags', to: '/blog/tags'},
+          {label: 'GitHub', href: 'https://github.com/shubhkr72/stackcraft'},
+          {label: 'Contributing', href: 'https://github.com/shubhkr72/StackCraft/blob/main/docs/contribution.md'},
+        ]},
+
+        {title: 'GitHub', items: [
+          {html: '<a href="https://github.com/shubhkr72/stackcraft" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/shubhkr72/stackcraft?style=social" alt="GitHub Stars"/></a>'},
+          {html: '<a href="https://github.com/shubhkr72/stackcraft" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/forks/shubhkr72/stackcraft?style=social" alt="GitHub Forks"/></a>'},
+          {html: '<a href="https://github.com/shubhkr72/stackcraft" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/contributors/shubhkr72/stackcraft" alt="Contributors"/></a>'},
+          {label: 'Star StackCraft →', href: 'https://github.com/shubhkr72/stackcraft'},
+        ]},
+
+        {title: 'Support', items: [
+          {html: 'Help keep StackCraft free for everyone.'},
+          // {label: 'Sponsor', href: 'https://github.com/sponsors/shubhkr72'},
+          {html: '<a href="#top">↑ Back to top</a>'},
         ]},
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Shubham Sebrin. Built for curious engineers.`,
+
+      copyright: `
+        © ${new Date().getFullYear()} <strong>StackCraft</strong>.
+        Built with ❤️ for the developer community.
+      `
     },
     prism: {
       theme: prismThemes.github,
