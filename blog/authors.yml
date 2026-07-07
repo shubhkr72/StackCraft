@@ -6,7 +6,7 @@ editorial:
 
 # Author- shubham
 shubham:
-  name: Shubham Sebrin
+  name: Shubham Kumar
   title: Creator of StackCraft
   page: true
   image_url: https://github.com/shubhkr72.png
@@ -14,3 +14,14 @@ shubham:
     github: shubhkr72
     linkedin: shubham-sebrin
     x: shubhkr72
+
+#Author - Sebrin
+sebrin:
+  name: shubham sebrin
+  page: true
+  title: shubham kumar v2
+  socials:
+    github: shubhkr72
+    linkedin: shubham-sebrin
+    x: shubhkr72
+  
