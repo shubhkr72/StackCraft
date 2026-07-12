@@ -90,7 +90,7 @@ const config: Config = {
           {label: 'Blog', to: '/blog'},
           {label: 'All Tags', to: '/blog/tags'},
           {label: 'GitHub', href: 'https://github.com/shubhkr72/stackcraft'},
-          {label: 'Contributing', href: 'https://github.com/shubhkr72/StackCraft/blob/main/docs/contribution.md'},
+          {label: 'Contributing', href: '/docs/contribution'},
         ]},
 
         {title: 'GitHub', items: [

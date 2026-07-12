@@ -25,8 +25,8 @@ export default function Home(): ReactNode {
           <p className={styles.lead}>A growing, searchable knowledge base for engineers who want to reason about scalable systems, not memorize diagrams.</p>
           <div className={styles.actions}>
             <Link className="button button--primary button--lg" to="/docs/intro">Start learning →</Link>
-            <Link className="button button--outline button--secondary button--lg" to="/blog">Read the blog</Link>
-          </div>
+          <Link className={`button button--outline button--secondary button--lg ${styles.readBlogBtn}`}to="/blog"> Read the blog</Link>        
+            </div>
           <div className={styles.systemSketch} aria-label="Client requests flowing through a scalable system">
             <div><b>Clients</b><small>requests</small></div><i>→</i><div className="container"><b>Gateway</b><small>route</small></div><i>→</i><div className="container"><b>Services</b><small>compute</small></div><i>→</i><div className="container"><b>Data</b><small>persist</small></div>
           </div>
