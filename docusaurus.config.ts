@@ -53,12 +53,12 @@ const config: Config = {
   themeConfig: {
     metadata: [
       {name: 'keywords', content: 'system design, distributed systems, scalability, software architecture'},
-      {name: 'Shubham Sebrin', content: 'System Design Notes'},
+      {name: 'StackCraft', content: 'System Design Learning Platform'},
     ],
     colorMode: {respectPrefersColorScheme: true},
     navbar: {
       title: 'StackCraft',
-      logo: {alt: 'System Design Notes logo', src: 'img/logo.svg'},
+      logo: {alt: 'System Design logo', src: 'img/logo.svg'},
       items: [
         {type: 'docSidebar', sidebarId: 'systemDesignSidebar', position: 'left', label: 'Learn'},
         {to: '/blog', label: 'Blog', position: 'left'},
